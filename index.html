@@ -105,7 +105,7 @@ function handleClear(){
     total: '',
     isInitial: true,
     preOp: ''
-    });
+ });
 }
     return(
         <div className="calculator">
@@ -126,8 +126,8 @@ function handleClear(){
             <CalcButton value="3" onClick={handleNumber}/>
             <CalcButton className="operator" value="+"/>
 
-            <CalcButton value="C"/>
-            <CalcButton value="0"/>
+            <CalcButton value="C" onClick={handleClear}/>
+            <CalcButton value="0" onClick={handleNumber}/>
             <CalcButton className="operator" value="="/>
             <CalcButton className="operator" value="-"/>
         </div>
